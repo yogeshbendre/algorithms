@@ -196,6 +196,11 @@ class Graph{
         g.addEdge(1,2,-3);
         g.addEdge(2,3,-4);
         g.addEdge(1,4,0);
+        
+        //Uncomment below two edges to introduce a negative weight cycle
+        //g.addEdge(4,2,-30);
+        //g.addEdge(2,0,-10);
+        
         g.addEdge(0,5,2);
         g.addEdge(5,1,1);
         g.addEdge(6,7,11);
