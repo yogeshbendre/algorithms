@@ -1,0 +1,6 @@
+System.out.println(LocalDate.now().toString());
+        
+        System.out.println(LocalTime.now().toString());
+        
+        System.out.println(LocalDateTime.now().toString());
+    }

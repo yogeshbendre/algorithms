@@ -1,0 +1,27 @@
+root@w3-vcperf-0033 [ / ]# cat /var/log/vmware/vmon/vmon.log | grep -i "Service Started Successfully" | grep -i vpxd
+2019-07-24T03:34:40.935Z| host-2173| I125: <vpxd-svcs> Service STARTED successfully.
+2019-07-24T03:34:52.363Z| host-2173| I125: <vpxd> Service STARTED successfully.
+2019-07-24T03:49:08.330Z| host-2173| I125: <vpxd> Service STARTED successfully.
+root@w3-vcperf-0033 [ / ]# vmon-cli --status vpxd
+Name: vpxd
+Starttype: AUTOMATIC
+RunState: STARTED
+RunAsUser: root
+CurrentRunStateDuration(ms): 6454082
+HealthState: HEALTHY
+FailStop: N/A
+MainProcessId: 13764
+root@w3-vcperf-0033 [ / ]# ps -eo pid,etime | grep 13764
+13764    01:47:54
+root@w3-vcperf-0033 [ / ]# date
+Wed Jul 24 05:36:54 UTC 2019
+root@w3-vcperf-0033 [ / ]#
+
+
+4 36 54
+4 36
+
+4 00
+
+3 49 00
+
